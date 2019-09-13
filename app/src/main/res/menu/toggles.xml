@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/toggle_hour"
+        android:title="Time"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/toggle_day"
+        android:title="Dag"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/toggle_week"
+        android:title="Uge"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/toggle_two_weeks"
+        android:title="2 Uger"
+        tools:ignore="MenuTitle" />
+
+
+</menu>

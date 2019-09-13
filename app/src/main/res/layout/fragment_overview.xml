@@ -1,0 +1,371 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.OverviewFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/primaryColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/primaryTextColor">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:text="Oversigt"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewNO2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/CardViewNO2ButtonLearnMore"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ButtonLearnMore"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewNO2Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/CardviewTitleNO2"
+                        android:textColor="@color/darkGray"
+                        android:textStyle="bold"
+                        android:transitionName="dataTypeTitle"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewNO2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardviewNO2Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="'Kort beskrivelse...'"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewNO2Title"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewNO2Title" />
+
+                    <ImageView
+                        android:id="@+id/imageViewNO2"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ic_directions_car_150dp"
+                        android:transitionName="dataTypeImage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardviewNO2LatestReadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/LatestReadingText"
+                        app:layout_constraintBottom_toTopOf="@+id/CardViewNO2ButtonLearnMore"
+                        app:layout_constraintStart_toStartOf="@+id/CardviewNO2Subtitle"
+                        app:layout_constraintTop_toBottomOf="@+id/CardviewNO2Subtitle" />
+
+                    <TextView
+                        android:id="@+id/CardViewNO2LatestReadingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toEndOf="@+id/CardviewNO2LatestReadingText"
+                        app:layout_constraintTop_toTopOf="@+id/CardviewNO2LatestReadingText" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewO3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/CardViewO3ButtonLearnMore"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ButtonLearnMore"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageViewO3"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ic_directions_car_150dp"
+                        android:transitionName="dataTypeImage"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewO3Title"
+                        android:transitionName="dataTypeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/CardViewTitleO3"
+                        android:textColor="@color/darkGray"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewO3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewO3Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewO3Title"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewO3Title" />
+
+                    <TextView
+                        android:id="@+id/CardViewO3LatestReadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/LatestReadingText"
+                        app:layout_constraintBottom_toTopOf="@+id/CardViewO3ButtonLearnMore"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewO3Subtitle"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewO3Subtitle" />
+
+                    <TextView
+                        android:id="@+id/CardViewO3LatestReadingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toEndOf="@+id/CardViewO3LatestReadingText"
+                        app:layout_constraintTop_toTopOf="@+id/CardViewO3LatestReadingText" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewPM25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/CardViewPM25ButtonLearnMore"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ButtonLearnMore"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPM25"
+                        android:transitionName="dataTypeImage"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ic_directions_car_150dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM25Title"
+                        android:transitionName="dataTypeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/CardViewPM25Title"
+                        android:textColor="@color/darkGray"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewPM25"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewSubtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewPM25Title"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewPM25Title" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM25LatestReadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/LatestReadingText"
+                        app:layout_constraintBottom_toTopOf="@+id/CardViewPM25ButtonLearnMore"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewSubtitle"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewSubtitle" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM25LatestReadingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toEndOf="@+id/CardViewPM25LatestReadingText"
+                        app:layout_constraintTop_toTopOf="@+id/CardViewPM25LatestReadingText" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardViewPM10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/CardViewPM10ButtonLearnMore"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ButtonLearnMore"
+                        android:textColor="@color/primaryColor"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageViewPM10"
+                        android:transitionName="dataTypeImage"
+                        android:layout_width="150dp"
+                        android:layout_height="0dp"
+                        android:src="@drawable/ic_directions_car_150dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM10Title"
+                        android:transitionName="dataTypeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/CardViewPM10Title"
+                        android:textColor="@color/darkGray"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toEndOf="@+id/imageViewPM10"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM10Subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewPM10Title"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewPM10Title" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM10LatestReadingText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/LatestReadingText"
+                        app:layout_constraintBottom_toTopOf="@+id/CardViewPM10ButtonLearnMore"
+                        app:layout_constraintStart_toStartOf="@+id/CardViewPM10Subtitle"
+                        app:layout_constraintTop_toBottomOf="@+id/CardViewPM10Subtitle" />
+
+                    <TextView
+                        android:id="@+id/CardViewPM10LatestReadingValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:text="TextView"
+                        app:layout_constraintStart_toEndOf="@+id/CardViewPM10LatestReadingText"
+                        app:layout_constraintTop_toTopOf="@+id/CardViewPM10LatestReadingText" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

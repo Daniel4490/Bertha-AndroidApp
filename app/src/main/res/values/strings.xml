@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BerthaAU</string>
+
+    <!--Graph page-->
+    <string name="NavItemGraphTitle">Grafer</string>
+    <string name="DataDescription">
+        Med grafen får du vist en oversigt over den data der er indsamlet med telefonens tilhørende sensorenhed.
+        Der måles data for - Kvælstofdioxid (NO₂), ozon (O₃), fine partikler (PM 2.5) og grove partikler (PM 10).
+
+    </string>
+
+    <!--Descriptions-->
+    <string name="UnitsDescription">TextView</string>
+
+    <string name="FunctionalityDescription">Grafen kan skaleres på begge akser med berøringsbevægelser.
+                                            Trykker du desuden omkring et punkt på kurven, kan du se værdien for koncentrationen for det markerede tidspunkt.
+    </string>
+    <string name="LimitsDescription">TextView</string>
+
+    <string name="DataTypeButtonsDescription">Knapperne under grafen ændrer hvilken type data der vises.
+                                                Hvis du vil vide mere om de forskellige data typer kan du trykke på objekterne i "Oversigt"
+    </string>
+    <string name="PeriodButtonsDescription">Med knapperne over grafen kan der tilvælges hvilken periode der skal vises data for.
+                                            Bemærk at der her vises for de seneste perioder (f.eks. de sidste 24 timer for "Dag"), og ikke blot for den aktuelle dato.
+    </string>
+    <!---->
+
+    <!--Overview page-->
+    <string name="ButtonLearnMore">Læs mere</string>
+    <!--NO2 specific-->
+
+    <string name="CardviewTitleNO2">NO₂ - Kvælstofdioxid</string>
+    <string name="DescriptionTextNo2">De væsentligste kilder til forurening med kvælstofoxider er trafik og kraftværker.
+                                    Bilers udstødning indeholder en blanding af kvælstofoxider, som hovedsageligt består af NO og nogle få procent NO2.\n
+
+                                    NO2 er sundhedsskadeligt, og der er fastsat grænseværdier for det.</string>
+
+    <!--O3 specific-->
+    <string name="CardViewTitleO3">O₃ - Ozon</string>
+    <string name="DescriptionTextO3">Ozon dannes i atmosfæren ved fotokemiske reaktioner (dvs ved påvirkning af sollys) af kvælstofoxider og organiske gasser.
+                                En stor del af de organiske gasser er af naturlig oprindelse - men hovedkilderne er trods alt industrier og trafik.\n\nStørstedelen af den O3, der måles i luften i Danmark stammer fra kilder uden for landets grænser.
+                                Der er normalt størst koncentrationer på landet og i bybaggrund.
+                                I gaderummet nedbrydes O3 af NO fra traffiken. De største koncentrationer findes i sommerhalvåret i perioder med varmt og solrigt vejr.\n
+
+                                O3 er en giftig luftart der giver anledning til luftvejsproblemer og skader på plantevækst.
+                                Der er derfor fastsat grænseværdier for hvor meget O3 der må være i luften.\n </string>
+    <!---->
+
+    <!--Default values-->
+    <string name="ValueNotFound">Fejl - data eller tekst ikke fundet</string>
+
+
+    <!---->
+
+
+    <string-array name="graph_spinner_items">
+        <item>Time</item>
+        <item>Dag</item>
+        <item>Uge</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LatestReadingText">Seneste måling:</string>
+    <string name="CardViewPM25Title">PM 2.5 - Fine partikler</string>
+    <string name="CardViewPM10Title">PM 10 - Grove partikler</string>
+
+
+</resources>

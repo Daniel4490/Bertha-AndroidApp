@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_oversigt"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_24dp"
+        android:title="Oversigt"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_grafer"
+        android:enabled="true"
+        android:icon="@drawable/ic_show_chart_24dp"
+        android:title="@string/NavItemGraphTitle"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_guide"
+        android:enabled="true"
+        android:icon="@drawable/ic_info_24dp"
+        android:title="Guide"
+        app:showAsAction="ifRoom" />
+</menu>
